@@ -338,6 +338,7 @@ Diary Page
 }
 
 .DiaryPage section {
+  width: 100%;
   margin-bottom: 100px;
 
   display: flex;
@@ -387,13 +388,18 @@ Diary Page
   font-size: 25px;
 }
 
-.DiaryPage .diary_content {
-  text-align: left;
+.DiaryPage .diary_content_wrapper {
   background-color: #ececec;
   border-radius: 5px;
-  padding: 20px;
-  font-size: 20px;
 
+  width: 100%;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.DiaryPage .diary_content_wrapper p {
+  padding: 20px;
+  text-align: left;
+  font-size: 20px;
   font-family: "Yeon Sung", cursive;
   font-weight: 400;
   line-height: 2.5;

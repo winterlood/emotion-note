@@ -80,7 +80,9 @@ const Diary = ({ match }) => {
           </section>
           <section>
             <h4>오늘의 일기</h4>
-            <div className="diary_content">{data.content}</div>
+            <div className="diary_content_wrapper">
+              <p>{data.content}</p>
+            </div>
           </section>
         </article>
       </div>
